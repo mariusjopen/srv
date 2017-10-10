@@ -37,16 +37,20 @@
 		<div class="projects-headlines">
 			<?php
 			if( have_rows('projects') ):
+        $i = 1;
 
-			    while ( have_rows('projects') ) : the_row();
-			    ?>
+		    while ( have_rows('projects') ) : the_row();
+		    ?>
+        <div id="project-<?php echo $i ?>" class="projects-box">
 
-				    <div class="projects-headlines-inside">
-				    	<?php the_sub_field('projects_headline'); ?>
-				    </div>
+			    <div class="projects-headlines-inside">
+			    	<?php the_sub_field('projects_headline'); ?>
+			    </div>
 
-			    <?php
-			    endwhile;
+        </div>
+		    <?php
+        $i++;
+		    endwhile;
 
 			else :
 
@@ -57,19 +61,23 @@
 		<div class="projects-effect">
 			<?php
 			if( have_rows('projects') ):
+        $i = 1;
 
 			    while ( have_rows('projects') ) : the_row();
-			    	?>
+			    ?>
+            <div id="project-effect-<?php echo $i ?>" class="projects-effect-box">
 
-					<div class="projects-text-left">
-						<?php the_sub_field('projects_text_left'); ?>
-					</div>
+    					<div class="projects-text-left">
+    						<?php the_sub_field('projects_text_left'); ?>
+    					</div>
 
-					<div class="projects-text-right">
-						<?php the_sub_field('projects_text_right'); ?>
-					</div>
+    					<div class="projects-text-right">
+    						<?php the_sub_field('projects_text_right'); ?>
+    					</div>
 
-			        <?php
+            </div>
+			      <?php
+          $i++;
 			    endwhile;
 
 			else :
@@ -85,16 +93,20 @@
 		<div class="team-headlines">
 			<?php
 			if( have_rows('team') ):
+      $i = 1;
 
-			    while ( have_rows('team') ) : the_row();
-			    	?>
+		    while ( have_rows('team') ) : the_row();
+		    ?>
+        <div id="team-<?php echo $i ?>" class="team-box">
 
-			    	<div class="team-headlines-inside">
-			    		<?php the_sub_field('team_headline'); ?>
-					</div>
+		    	<div class="team-headlines-inside">
+		    		<?php the_sub_field('team_headline'); ?>
+				  </div>
 
-			        <?php
-			    endwhile;
+        </div>
+		    <?php
+        $i++;
+		    endwhile;
 
 			else :
 
@@ -106,11 +118,13 @@
 		<div class="team-effect">
 			<?php
 			if( have_rows('team') ):
+      $i = 1;
 
-			    while ( have_rows('team') ) : the_row();
-			    	?>
+		    while ( have_rows('team') ) : the_row();
+		    ?>
+        <div id="team-effect-<?php echo $i ?>" class="team-box">
 
-			    	<div class="team-image">
+			    <div class="team-image">
 			    		<?php the_sub_field('team_image'); ?>
 					</div>
 
@@ -122,8 +136,10 @@
 						<?php the_sub_field('team_text'); ?>
 					</div>
 
-			        <?php
-			    endwhile;
+        </div>
+		    <?php
+        $i++;
+		    endwhile;
 
 			else :
 
