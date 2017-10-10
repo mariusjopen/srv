@@ -122,7 +122,7 @@
 
 		    while ( have_rows('team') ) : the_row();
 		    ?>
-        <div id="team-effect-<?php echo $i ?>" class="team-box">
+        <div id="team-effect-<?php echo $i ?>" class="team-effect-box">
 
 			    <div class="team-image">
 			    		<?php the_sub_field('team_image'); ?>

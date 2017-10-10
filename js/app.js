@@ -1,3 +1,7 @@
-jQuery(document).ready(function () {
-  console.log('APP');
+jQuery(function() {
+jQuery( ".projects-effect-box" ).each(function() {
+
+  console.log('TEST');
+
+});
 });
