@@ -201,6 +201,36 @@
 		"oAP": "\/style.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/template-contact.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-contact.php",
+		"oF": 0
+		},
+	"\/template-header.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-header.php",
+		"oF": 0
+		},
+	"\/template-projects.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-projects.php",
+		"oF": 0
+		},
+	"\/template-team.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-team.php",
+		"oF": 0
+		},
+	"\/template-welcome.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-welcome.php",
+		"oF": 0
 		}
 	},
 "hooks": [
