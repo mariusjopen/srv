@@ -1,6 +1,14 @@
 <div class="contact container">
   <div class="contact-image">
-    <?php the_field('contact_image'); ?>
+
+  <?php
+  $image = get_field('contact_image');
+  $size = 'medium';
+  if( $image ) {
+    echo wp_get_attachment_image( $image, $size );
+  }
+  ?>
+
   </div>
 
   <div class="contact-text-top">

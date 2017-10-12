@@ -12,7 +12,6 @@
 			jQuery(function() {
 				jQuery.scrollify({
 					section : ".container",
-					sectionName : "container"
 				});
 			});
     </script>
