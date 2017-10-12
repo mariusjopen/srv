@@ -11,5 +11,4 @@ jQuery(function() {
     jQuery( ".team-effect-box").removeClass( "visible" );
     jQuery( "#team-effect-" + p ).addClass( "visible" );
   });
-
 });
