@@ -42,7 +42,23 @@
 	width: 25%;
 }
 
-.projects-effect-box{
+.team-image {
+  left: 25%;
+	width: 25%;
+}
+
+.team-contact {
+  left: 50%;
+	width: 25%;
+}
+
+.team-text {
+  left: 75%;
+	width: 25%;
+}
+
+.projects-effect-box,
+.team-effect-box {
 	visibility: hidden;
 }
 

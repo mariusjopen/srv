@@ -35,7 +35,7 @@
       <div id="team-effect-<?php echo $i ?>" class="team-effect-box">
 
         <div class="team-image">
-            <?php the_sub_field('team_image'); ?>
+          <?php the_sub_field('team_image'); ?>
         </div>
 
         <div class="team-contact">
