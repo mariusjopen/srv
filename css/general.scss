@@ -1,5 +1,31 @@
+@font-face {
+  font-family: 'BentonModDisp-Regular';
+  src: url('../../fonts/BentonModDisp-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../../fonts/BentonModDisp-Regular.otf')  format('opentype'),
+	     url('../../fonts/BentonModDisp-Regular.woff') format('woff'),
+       url('../../fonts/BentonModDisp-Regular.ttf')  format('truetype'),
+       url('../../fonts/BentonModDisp-Regular.svg#BentonModDisp-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BentonModDisp-RegularItalic';
+  src: url('../../fonts/BentonModDisp-RegularItalic.eot?#iefix') format('embedded-opentype'),
+       url('../../fonts/BentonModDisp-RegularItalic.otf')  format('opentype'),
+	     url('../../fonts/BentonModDisp-RegularItalic.woff') format('woff'),
+       url('../../fonts/BentonModDisp-RegularItalic.ttf')  format('truetype'),
+       url('../../fonts/BentonModDisp-RegularItalic.svg#BentonModDisp-RegularItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0px;
+}
+
+body {
+  font-family: 'BentonModDisp-Regular';
 }
 
 img {
@@ -7,34 +33,12 @@ img {
   height: auto;
 }
 
-.header {
-  position: fixed;
-}
-
-.header img {
-  display: none;
-}
-
 .container {
 	height: 100vh;
 }
 
-.welcome {
-	background: yellow;
-}
-
-.projects {
-	background: red;
-}
-
-.team {
-	background: pink;
-}
-
-.contact {
-	background: orange;
-}
-
+.welcome-text,
+.welcome-image,
 .projects-text,
 .projects-headlines,
 .team-image,
@@ -42,29 +46,6 @@ img {
 .team-text,
 .team-headlines {
 	position: absolute;
-}
-
-.projects-text{
-	left: 50%;
-	width: 50%;
-}
-
-.team-image {
-  left: 25%;
-}
-
-.image-small {
-  width: 25%;
-}
-
-.image-big {
-  width: 50%;
-}
-
-
-.team-text {
-  left: 75%;
-	width: 25%;
 }
 
 .projects-effect-box,

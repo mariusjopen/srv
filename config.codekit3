@@ -35,6 +35,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/css\/header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/header.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/css\/min\/combine.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -55,17 +68,37 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"\/css\/min\/mobile.min.css": {
+	"\/css\/min\/header.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/css\/min\/mobile.min.css",
+		"oAP": "\/css\/min\/header.min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/css\/mobile.scss": {
+	"\/css\/min\/projects.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/min\/projects.min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/min\/team.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/min\/team.min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/projects.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -73,10 +106,104 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/min\/mobile.min.css",
+		"oAP": "\/css\/min\/projects.min.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"\/css\/team.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/team.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/css\/welcome.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/welcome.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/fonts\/BentonModDisp-Regular.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/BentonModDisp-Regular.eot",
+		"oF": 0
+		},
+	"\/fonts\/BentonModDisp-Regular.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/BentonModDisp-Regular.otf",
+		"oF": 0
+		},
+	"\/fonts\/BentonModDisp-Regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/fonts\/BentonModDisp-Regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/BentonModDisp-Regular.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/BentonModDisp-Regular.ttf",
+		"oF": 0
+		},
+	"\/fonts\/BentonModDisp-Regular.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/BentonModDisp-Regular.woff",
+		"oF": 0
+		},
+	"\/fonts\/BentonModDisp-RegularItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/BentonModDisp-RegularItalic.eot",
+		"oF": 0
+		},
+	"\/fonts\/BentonModDisp-RegularItalic.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/BentonModDisp-RegularItalic.otf",
+		"oF": 0
+		},
+	"\/fonts\/BentonModDisp-RegularItalic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/fonts\/BentonModDisp-RegularItalic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/BentonModDisp-RegularItalic.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/BentonModDisp-RegularItalic.ttf",
+		"oF": 0
+		},
+	"\/fonts\/BentonModDisp-RegularItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/BentonModDisp-RegularItalic.woff",
+		"oF": 0
 		},
 	"\/footer.php": {
 		"ft": 8192,
