@@ -1,5 +1,18 @@
+* {
+  margin: 0px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 .header {
   position: fixed;
+}
+
+.header img {
+  display: none;
 }
 
 .container {
@@ -22,8 +35,7 @@
 	background: orange;
 }
 
-.projects-text-left,
-.projects-text-right,
+.projects-text,
 .projects-headlines,
 .team-image,
 .team-contact,
@@ -32,25 +44,23 @@
 	position: absolute;
 }
 
-.projects-text-left{
+.projects-text{
 	left: 50%;
-	width: 25%;
-}
-
-.projects-text-right{
-	left: 75%;
-	width: 25%;
+	width: 50%;
 }
 
 .team-image {
   left: 25%;
-	width: 25%;
 }
 
-.team-contact {
-  left: 50%;
-	width: 25%;
+.image-small {
+  width: 25%;
 }
+
+.image-big {
+  width: 50%;
+}
+
 
 .team-text {
   left: 75%;

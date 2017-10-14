@@ -34,12 +34,14 @@
       ?>
       <div id="team-effect-<?php echo $i ?>" class="team-effect-box">
 
-        <div class="team-image">
-          <?php the_sub_field('team_image'); ?>
-        </div>
-
-        <div class="team-contact">
-          <?php the_sub_field('team_contact'); ?>
+        <div class="team-image <?php the_sub_field('team_image_size'); ?>">
+          <?php
+          $image = get_sub_field('team_image');
+          $size = 'medium';
+          if( $image ) {
+            echo wp_get_attachment_image( $image, $size );
+          }
+          ?>
         </div>
 
         <div class="team-text">

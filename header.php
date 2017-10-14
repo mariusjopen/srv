@@ -11,7 +11,7 @@
 		<script>
 			jQuery(function() {
 				jQuery.scrollify({
-					section : ".container",
+					section : ".container"
 				});
 			});
     </script>

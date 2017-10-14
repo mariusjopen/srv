@@ -33,12 +33,8 @@
         ?>
           <div id="project-effect-<?php echo $i ?>" class="projects-effect-box">
 
-            <div class="projects-text-left">
-              <?php the_sub_field('projects_text_left'); ?>
-            </div>
-
-            <div class="projects-text-right">
-              <?php the_sub_field('projects_text_right'); ?>
+            <div class="projects-text">
+              <?php the_sub_field('projects_text'); ?>
             </div>
 
           </div>
