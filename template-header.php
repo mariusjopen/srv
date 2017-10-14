@@ -5,16 +5,21 @@
 		</div>
 
 		<div class="header-navigation">
+
+			<div class="header-navigation-home">
+				<?php the_field('welcome_navigation_title'); ?>
+			</div>
+
 			<div class="header-navigation-projects">
-				<?php the_field('navigation_projects'); ?>
+				<?php the_field('projects_navigation_title'); ?>
 			</div>
 
 			<div class="header-navigation-team">
-				<?php the_field('navigation_team'); ?>
+				<?php the_field('team_navigation_title'); ?>
 			</div>
 
 			<div class="header-navigation-contact">
-				<?php the_field('navigation_contact'); ?>
+				<?php the_field('contact_navigation_title'); ?>
 			</div>
 		</div>
 

@@ -1,15 +1,7 @@
 <div class="contact container">
 
-  <div class="contact-text-top">
-    <?php the_field('contact_text_top'); ?>
-  </div>
-
-  <div class="contact-text-numbers">
-    <?php the_field('contact_text_numbers'); ?>
-  </div>
-
-  <div class="contact-text-email">
-    <?php the_field('contact_text_email'); ?>
+  <div class="contact-text">
+    <?php the_field('contact_text'); ?>
   </div>
 
   <div class="contact-image">
