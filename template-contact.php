@@ -8,7 +8,7 @@
 
   <?php
   $image = get_field('contact_image');
-  $size = 'medium';
+  $size = 'big';
   if( $image ) {
     echo wp_get_attachment_image( $image, $size );
   }

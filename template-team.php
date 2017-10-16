@@ -37,7 +37,7 @@
         <div class="team-image <?php the_sub_field('team_image_size'); ?>">
           <?php
           $image = get_sub_field('team_image');
-          $size = 'medium';
+          $size = 'big';
           if( $image ) {
             echo wp_get_attachment_image( $image, $size );
           }
