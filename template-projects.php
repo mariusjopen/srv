@@ -10,7 +10,7 @@
       <div id="<?php echo $i ?>" class="projects-box">
 
         <div class="projects-headlines-inside">
-          <?php the_sub_field('projects_headline'); ?>
+          <p><?php the_sub_field('projects_headline'); ?></p>
         </div>
 
       </div>

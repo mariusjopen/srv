@@ -22,15 +22,30 @@
 
 * {
   margin: 0px;
+  padding: 0px;
 }
 
 body {
   font-family: 'BentonModDisp-Regular';
+  -webkit-font-smoothing: antialiased;
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+h1 {
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+p {
+  letter-spacing: 0.035em;
+  line-height: 1.2;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .container {
