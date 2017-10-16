@@ -1,9 +1,16 @@
-.welcome-image {
-  width: 50%;
+.welcome-image img {
+  width: 40vw;
+  height: 40vw;
+  object-fit: cover;
+  margin-left: 5vw;
+  @extend .vertical_center;
 }
 
 .welcome-text {
-  width: 50%;
+  width: 40vw;
+  height: auto;
+  margin-left: 5vw;
+  @extend .vertical_center;
 }
 
 .image-active {
