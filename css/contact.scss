@@ -1,8 +1,17 @@
 .contact-text {
-    width: 50%;
+  height: $width-small;
+  width: $width-small;
+  margin-left: $width-offset;
+  @extend .vertical_center;
 }
 
 .contact-image {
-    width: 50%;
-    left: 50%;
+  left: 50%;
+}
+
+.contact-image img {
+  object-fit: cover;
+  height: $width-small;
+  @extend .horizontal_center;
+  @extend .vertical_center;
 }
