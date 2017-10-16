@@ -43,6 +43,27 @@ p {
   font-size: 20px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+::selection {
+    background: none;
+    color: #999;
+    text-shadow: none;
+}
+
 .container {
 	height: 100vh;
 }
