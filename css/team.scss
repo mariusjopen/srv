@@ -1,5 +1,5 @@
 .team-headlines {
-	height: 50vh;
+	height: $width-small;
 	@extend .vertical_center;
 	@extend .horizontal_center;
 }
@@ -8,7 +8,7 @@
   left: 75%;
 	width: 20%;
   @extend .vertical_center ;
-  height: 50vh;
+  height: $width-small;
 }
 
 .team-box p {
@@ -18,7 +18,7 @@
 .team-image {
   left: 25%;
   @extend .vertical_center ;
-  height: 50vh;
+  height: $width-small;
 }
 
 .image-small img {

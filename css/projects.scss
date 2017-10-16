@@ -3,14 +3,14 @@
 }
 
 .projects-headlines {
-	height: 50vh;
+	height: $width-small;
 	@extend .vertical_center;
 	@extend .horizontal_center;
 }
 
 .projects-text{
 	left: 50%;
-	height: 50vh;
+	height: $width-small;
 	@extend .vertical_center;
 	@extend .horizontal_center;
 }
