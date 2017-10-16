@@ -1,5 +1,13 @@
+$width-small: 40vw;
+$width-offset: 5vw;
+
 .vertical_center {
   position: absolute;
-  top: 50vh;
+  margin-top: 50vh;
   transform: translateY(-54%);
+}
+
+.horizontal_center {
+  width: $width-small;
+  margin-left: $width-offset;
 }

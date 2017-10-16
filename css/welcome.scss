@@ -1,18 +1,16 @@
 .welcome-image img {
-  width: 40vw;
-  height: 40vw;
   object-fit: cover;
-  margin-left: 5vw;
-  @extend .vertical_center;
-}
-
-.welcome-text {
-  width: 40vw;
-  height: auto;
-  margin-left: 5vw;
+  height: $width-small;
+  @extend .horizontal_center;
   @extend .vertical_center;
 }
 
 .image-active {
   left: 50%;
+}
+
+.welcome-text {
+  width: $width-small;
+  margin-left: $width-offset;
+  @extend .vertical_center;
 }

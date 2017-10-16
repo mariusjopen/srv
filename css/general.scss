@@ -68,3 +68,9 @@ p {
 .visible {
 	visibility: visible;
 }
+
+.active {
+  color: #999999;
+  margin-left: 20px;
+  transition: 0.2s ease;
+}
