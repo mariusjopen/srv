@@ -7,7 +7,7 @@
 
       while ( have_rows('team') ) : the_row();
       ?>
-      <div id="<?php echo $i ?>" class="team-box">
+      <div id="t-<?php echo $i ?>" class="team-box">
 
         <div class="team-headlines-inside">
           <p><?php the_sub_field('team_headline'); ?></p>
