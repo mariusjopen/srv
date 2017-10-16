@@ -1,17 +1,34 @@
-.team-image {
-  left: 25%;
-}
-
-.image-small {
-  width: 25%;
-  left: 50%;
-}
-
-.image-big {
-  width: 50%;
+.team-headlines {
+	height: 50vh;
+	@extend .vertical_center;
+	@extend .horizontal_center;
 }
 
 .team-text {
   left: 75%;
-	width: 25%;
+	width: 20%;
+  @extend .vertical_center ;
+  height: 50vh;
+}
+
+.team-box p {
+  @extend .list ;
+}
+
+.team-image {
+  left: 25%;
+  @extend .vertical_center ;
+  height: 50vh;
+}
+
+.image-small img {
+  width: 25vw;
+  height: 25vw;
+  left: 50%;
+  margin-left: $width-offset;
+}
+
+.image-big img {
+  @extend .horizontal_center;
+  height: $width-small;
 }
