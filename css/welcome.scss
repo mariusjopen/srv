@@ -3,14 +3,14 @@
   height: $width-small;
   @extend .horizontal_center;
   @extend .vertical_center;
+  @extend .position_left;
 }
 
 .image-active {
-  left: 50%;
+  @extend .position_middle;
 }
 
 .welcome-text {
   width: $width-small;
-  margin-left: $width-offset;
   @extend .vertical_center;
 }

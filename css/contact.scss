@@ -1,12 +1,12 @@
 .contact-text {
   height: $width-small;
   width: $width-small;
-  margin-left: $width-offset;
   @extend .vertical_center;
+	@extend .position_left;
 }
 
 .contact-image {
-  left: 50%;
+	@extend .position_middle;
 }
 
 .contact-image img {

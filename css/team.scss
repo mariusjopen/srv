@@ -1,12 +1,12 @@
 .team-headlines {
 	height: $width-small;
 	@extend .vertical_center;
-	@extend .horizontal_center;
+	@extend .position_left;
 }
 
 .team-text {
-  left: 75%;
-	width: 20%;
+  left: 65%;
+	width: 10vw;
   @extend .vertical_center ;
   height: $width-small;
 }
@@ -16,16 +16,15 @@
 }
 
 .team-image {
-  left: 25%;
+  left: 37.5vw;
   @extend .vertical_center ;
   height: $width-small;
 }
 
 .image-small img {
-  width: 25vw;
-  height: 25vw;
-  left: 50%;
-  margin-left: $width-offset;
+  width: 10vw;
+  height: 10vw;
+  margin-left: 15vw;
 }
 
 .image-big img {

@@ -6,11 +6,12 @@
 	height: $width-small;
 	@extend .vertical_center;
 	@extend .horizontal_center;
+  @extend .position_left ;
 }
 
 .projects-text{
-	left: 50%;
 	height: $width-small;
 	@extend .vertical_center;
 	@extend .horizontal_center;
+  @extend .position_middle ;
 }

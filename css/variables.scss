@@ -1,16 +1,22 @@
-$width-small: 40vw;
-$width-offset: 5vw;
+$width-small: 25vw;
 $grey: #999;
+
+.position_left {
+  left: 22.5vw;
+}
+
+.position_middle {
+  left: 50vw;
+}
 
 .vertical_center {
   position: absolute;
   margin-top: 50vh;
-  transform: translateY(-54%);
+  transform: translateY(-52%);
 }
 
 .horizontal_center {
   width: $width-small;
-  margin-left: $width-offset;
 }
 
 .list {
