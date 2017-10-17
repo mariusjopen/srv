@@ -1,4 +1,4 @@
-<div class="welcome container">
+<div id="welcome" class="container">
 
   <div class="welcome-text <?php if(get_field('welcome_image'))  { echo "image-active"; }?>">
     <h1><?php the_field('welcome_text'); ?></h1>

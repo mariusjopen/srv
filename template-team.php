@@ -1,4 +1,4 @@
-<div class="team container">
+<div id="team" class="container">
 
   <div class="team-headlines">
     <?php

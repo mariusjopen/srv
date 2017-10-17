@@ -1,4 +1,4 @@
-<div class="projects container">
+<div id="projects" class="container">
 
   <div class="projects-headlines">
     <?php

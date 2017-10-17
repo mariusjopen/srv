@@ -1,4 +1,4 @@
-<div class="contact container">
+<div id="contact" class="container">
 
   <div class="contact-text">
     <?php the_field('contact_text'); ?>

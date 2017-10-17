@@ -12,6 +12,8 @@
   bottom: 30px;
   left: 30px;
   font-size: 30px;
+  cursor: pointer;
+  @extend .noselect ;
 }
 
 .header-navigation {
@@ -23,6 +25,8 @@
 .header-navigation-inside {
     float: left;
     margin-left: 10px;
+    cursor: pointer;
+    @extend .noselect ;
 }
 
 .header-language {

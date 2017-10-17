@@ -1,24 +1,20 @@
 
 	<div class="header">
-		<div class="header-title">
+		<div id="header-navigation-welcome" class="header-title">
 			<?php echo get_bloginfo( 'name' ); ?>
 		</div>
 
 		<div class="header-navigation">
 
-			<div class="header-navigation-inside header-navigation-home">
-				<p><?php the_field('welcome_navigation_title'); ?></p>
-			</div>
-
-			<div class="header-navigation-inside header-navigation-projects">
+			<div class="header-navigation-inside"  id="header-navigation-projects">
 				<p><?php the_field('projects_navigation_title'); ?></p>
 			</div>
 
-			<div class="header-navigation-inside header-navigation-team">
+			<div class="header-navigation-inside" id="header-navigation-team">
 				<p><?php the_field('team_navigation_title'); ?></p>
 			</div>
 
-			<div class="header-navigation-inside header-navigation-contact">
+			<div class="header-navigation-inside" id="header-navigation-contact">
 				<p><?php the_field('contact_navigation_title'); ?></p>
 			</div>
 		</div>

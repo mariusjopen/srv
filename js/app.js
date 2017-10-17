@@ -24,4 +24,30 @@ jQuery(function() {
     jQuery(this).addClass( "active" );
   });
 
+
+  jQuery("#header-navigation-welcome").click(function() {
+    jQuery('html,body').animate({
+        scrollTop: jQuery("#welcome").offset().top
+    }, 'slow');
+  });
+
+  jQuery("#header-navigation-projects").click(function() {
+    jQuery('html,body').animate({
+        scrollTop: jQuery("#projects").offset().top
+    }, 'slow');
+  });
+
+  jQuery("#header-navigation-team").click(function() {
+    jQuery('html,body').animate({
+        scrollTop: jQuery("#team").offset().top
+    }, 'slow');
+  });
+
+  jQuery("#header-navigation-contact").click(function() {
+    jQuery('html,body').animate({
+        scrollTop: jQuery("#contact").offset().top
+    }, 'slow');
+  });
+
+
 });
