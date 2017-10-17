@@ -19,12 +19,12 @@
 .header-navigation {
   position: fixed;
   bottom: 30px;
-  left: 50vw;
+  left: 55vw;
 }
 
 .header-navigation-inside {
     float: left;
-    margin-left: 10px;
+    margin-right: 10px;
     cursor: pointer;
     @extend .noselect ;
 }
