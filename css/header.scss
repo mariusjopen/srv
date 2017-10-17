@@ -29,6 +29,11 @@
     @extend .noselect ;
 }
 
+.header-navigation-inside:hover {
+  border-bottom: 1px solid black;
+  height: 22px;
+}
+
 .header-language {
   position: fixed;
   bottom: 30px;
