@@ -1,8 +1,18 @@
 .contact-text {
-  height: $width-small;
-  width: $width-small;
+  height: $box-width;
+  width: $box-width;
   @extend .vertical_center;
 	@extend .position_left;
+
+  @media screen and (max-width: $break-big) {
+    height: $box-width-big;
+  }
+  @media screen and (max-width: $break-middle) {
+    height: $box-width-middle;
+  }
+  @media screen and (max-width: $break-small) {
+    height: $box-width-small;
+  }
 }
 
 .contact-image {
@@ -11,7 +21,17 @@
 
 .contact-image img {
   object-fit: cover;
-  height: $width-small;
+  height: $box-width;
   @extend .horizontal_center;
   @extend .vertical_center;
+
+  @media screen and (max-width: $break-big) {
+    height: $box-width-big;
+  }
+  @media screen and (max-width: $break-middle) {
+    height: $box-width-middle;
+  }
+  @media screen and (max-width: $break-small) {
+    height: $box-width-small;
+  }
 }

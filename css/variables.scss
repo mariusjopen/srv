@@ -1,8 +1,25 @@
-$width-small: 25vw;
+$box-width: 25vw;
 $grey: #999;
+
+$break-big: 1200px;
+$break-middle: 900px;
+$break-small: 500px;
+
+$box-width-big: 40vw;
+$box-width-middle: 40vw;
+$box-width-small: 40vw;
 
 .position_left {
   left: 22.5vw;
+  @media screen and (max-width: $break-big) {
+    left: 5vw;
+  }
+  @media screen and (max-width: $break-middle) {
+    left: 5vw;
+  }
+  @media screen and (max-width: $break-small) {
+    left: 5vw;
+  }
 }
 
 .position_middle {
@@ -16,7 +33,16 @@ $grey: #999;
 }
 
 .horizontal_center {
-  width: $width-small;
+  width: $box-width;
+  @media screen and (max-width: $break-big) {
+    width: $box-width-big;
+  }
+  @media screen and (max-width: $break-middle) {
+    width: $box-width-big;
+  }
+  @media screen and (max-width: $break-small) {
+    width: $box-width-big;
+  }
 }
 
 .list {

@@ -1,14 +1,40 @@
 .team-headlines {
-	height: $width-small;
+	height: $box-width;
 	@extend .vertical_center;
 	@extend .position_left;
+
+	@media screen and (max-width: $break-big) {
+		height: $box-width-big;
+	}
+	@media screen and (max-width: $break-middle) {
+		height: $box-width-middle;
+	}
+	@media screen and (max-width: $break-small) {
+		height: $box-width-small;
+	}
 }
 
 .team-text {
-  left: 65%;
+  left: 65vw;
 	width: 10vw;
   @extend .vertical_center ;
-  height: $width-small;
+  height: $box-width;
+
+	@media screen and (max-width: $break-big) {
+		height: $box-width-big;
+		left: 75vw;
+		width: 20vw;
+	}
+	@media screen and (max-width: $break-middle) {
+		height: $box-width-middle;
+		left: 75vw;
+		width: 20vw;
+	}
+	@media screen and (max-width: $break-small) {
+		height: $box-width-small;
+		left: 75vw;
+		width: 20vw;
+	}
 }
 
 .team-box p {
@@ -18,16 +44,56 @@
 .team-image {
   left: 37.5vw;
   @extend .vertical_center ;
-  height: $width-small;
+  height: $box-width;
+
+	@media screen and (max-width: $break-big) {
+		height: $box-width-big;
+		left: 30vw;
+	}
+	@media screen and (max-width: $break-middle) {
+		height: $box-width-middle;
+		left: 30vw;
+	}
+	@media screen and (max-width: $break-small) {
+		height: $box-width-small;
+		left: 30vw;
+	}
 }
 
 .image-small img {
   width: 10vw;
   height: 10vw;
   margin-left: 15vw;
+
+	@media screen and (max-width: $break-big) {
+		width: 15vw;
+	  height: 15vw;
+	  margin-left: 25vw;
+	}
+	@media screen and (max-width: $break-middle) {
+		width: 15vw;
+	  height: 15vw;
+	  margin-left: 25vw;
+	}
+	@media screen and (max-width: $break-small) {
+		width: 15vw;
+	  height: 15vw;
+	  margin-left: 25vw;
+	}
+
 }
 
 .image-big img {
   @extend .horizontal_center;
-  height: $width-small;
+  height: $box-width;
+
+	@media screen and (max-width: $break-big) {
+		height: $box-width-big;
+	}
+	@media screen and (max-width: $break-middle) {
+		height: $box-width-middle
+	}
+	@media screen and (max-width: $break-small) {
+		height: $box-width-small;
+	}
 }

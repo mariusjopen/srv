@@ -1,9 +1,19 @@
 .welcome-image img {
   object-fit: cover;
-  height: $width-small;
+  height: $box-width;
   @extend .horizontal_center;
   @extend .vertical_center;
   @extend .position_left;
+
+  @media screen and (max-width: $break-big) {
+    height: $box-width-big;
+  }
+  @media screen and (max-width: $break-middle) {
+    height: $box-width-middle;
+  }
+  @media screen and (max-width: $break-small) {
+    height: $box-width-small;
+  }
 }
 
 .image-active {
@@ -11,6 +21,16 @@
 }
 
 .welcome-text {
-  width: $width-small;
+  width: $box-width;
   @extend .vertical_center;
+
+  @media screen and (max-width: $break-big) {
+    width: $box-width-big;
+  }
+  @media screen and (max-width: $break-middle) {
+    width: $box-width-middle;
+  }
+  @media screen and (max-width: $break-small) {
+    width: $box-width-small;
+  }
 }
