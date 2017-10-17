@@ -28,6 +28,7 @@
 body {
   font-family: 'BentonModDisp-Regular';
   -webkit-font-smoothing: antialiased;
+  overflow:hidden;
 }
 
 h1 {
@@ -43,6 +44,11 @@ p {
   font-size: 20px;
 }
 
+li {
+  list-style: none;
+  @extend p ;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -55,12 +61,12 @@ a:visited {
 
 a:hover {
   color: black;
-  text-decoration: underline;
+  border-bottom: 1px solid black;
 }
 
 ::selection {
     background: none;
-    color: #999;
+    color: $grey;
     text-shadow: none;
 }
 
@@ -91,7 +97,7 @@ a:hover {
 }
 
 .active {
-  color: #999999;
+  color: $grey;
   margin-left: 20px;
   transition: 0.2s ease;
 }

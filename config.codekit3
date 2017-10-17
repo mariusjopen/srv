@@ -111,6 +111,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/min\/variables.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/min\/variables.min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/min\/welcome.min.css": {
 		"aP": 1,
 		"bl": 0,

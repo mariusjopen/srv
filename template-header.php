@@ -6,20 +6,20 @@
 
 		<div class="header-navigation">
 
-			<div class="header-navigation-home">
-				<?php the_field('welcome_navigation_title'); ?>
+			<div class="header-navigation-inside header-navigation-home">
+				<p><?php the_field('welcome_navigation_title'); ?></p>
 			</div>
 
-			<div class="header-navigation-projects">
-				<?php the_field('projects_navigation_title'); ?>
+			<div class="header-navigation-inside header-navigation-projects">
+				<p><?php the_field('projects_navigation_title'); ?></p>
 			</div>
 
-			<div class="header-navigation-team">
-				<?php the_field('team_navigation_title'); ?>
+			<div class="header-navigation-inside header-navigation-team">
+				<p><?php the_field('team_navigation_title'); ?></p>
 			</div>
 
-			<div class="header-navigation-contact">
-				<?php the_field('contact_navigation_title'); ?>
+			<div class="header-navigation-inside header-navigation-contact">
+				<p><?php the_field('contact_navigation_title'); ?></p>
 			</div>
 		</div>
 

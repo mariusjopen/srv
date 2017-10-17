@@ -1,5 +1,6 @@
 .header {
   position: fixed;
+  z-index: 100;
 }
 
 .header img {
@@ -19,8 +20,26 @@
   left: 50vw;
 }
 
+.header-navigation-inside {
+    float: left;
+    margin-left: 10px;
+}
+
 .header-language {
   position: fixed;
   bottom: 30px;
   right: 30px;
+}
+
+.menu-item {
+  float: left;
+  margin-left: 10px;
+}
+
+.it #menu-item-164 a {
+    color: $grey;
+}
+
+.en #menu-item-163 a {
+    color: $grey;
 }
