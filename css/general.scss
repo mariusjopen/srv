@@ -52,16 +52,19 @@ h1 {
   }
 }
 
+li {
+  letter-spacing: 0.035em;
+  line-height: 1.4;
+  font-weight: 400;
+  font-size: 17px;
+  list-style: none;
+}
+
 p {
   letter-spacing: 0.035em;
   line-height: 1.2;
   font-weight: 400;
   font-size: 20px;
-}
-
-li {
-  list-style: none;
-  @extend p ;
 }
 
 a {
