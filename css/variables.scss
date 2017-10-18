@@ -12,7 +12,7 @@ $box-width-small: 40vw;
 .position_left {
   left: 15vw;
   @media screen and (max-width: $break-big) {
-    left: 5vw;
+    left: 7.5vw;
   }
   @media screen and (max-width: $break-middle) {
     left: 5vw;
@@ -24,6 +24,15 @@ $box-width-small: 40vw;
 
 .position_middle {
   left: 50vw;
+  @media screen and (max-width: $break-big) {
+    left: 52.5vw;
+  }
+  @media screen and (max-width: $break-middle) {
+    left: 50vw;
+  }
+  @media screen and (max-width: $break-small) {
+    left: 50vw;
+  }
 }
 
 .vertical_center {

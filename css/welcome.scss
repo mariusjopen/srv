@@ -21,6 +21,7 @@
 }
 
 .welcome-text {
+  @extend .position_left;
   width: $box-width;
   @extend .vertical_center;
 
