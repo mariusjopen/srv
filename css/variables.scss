@@ -1,16 +1,16 @@
-$box-width: 25vw;
+$box-width: 30vw;
 $grey: #999;
 
-$break-big: 1200px;
+$break-big: 1600px;
 $break-middle: 800px;
 $break-small: 500px;
 
-$box-width-big: 40vw;
+$box-width-big: 38vw;
 $box-width-middle: 40vw;
 $box-width-small: 40vw;
 
 .position_left {
-  left: 22.5vw;
+  left: 15vw;
   @media screen and (max-width: $break-big) {
     left: 5vw;
   }
