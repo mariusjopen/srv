@@ -128,3 +128,22 @@ a:hover {
   margin-left: 20px;
   transition: 0.2s ease;
 }
+
+
+.desktop {
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
+}
+
+.mobile {
+  @media screen and (max-width: $break-big) {
+    display: none;
+  }
+  @media screen and (max-width: $break-middle) {
+    display: none;
+  }
+  @media screen and (max-width: $break-small) {
+    display: block;
+  }
+}

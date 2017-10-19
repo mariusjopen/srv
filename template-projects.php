@@ -1,6 +1,6 @@
 <div id="projects" class="container">
 
-  <div class="projects-headlines">
+  <div class="projects-headlines desktop">
     <?php
     if( have_rows('projects') ):
       $i = 1;
@@ -24,7 +24,7 @@
     ?>
   </div>
 
-  <div class="projects-effect">
+  <div class="projects-effect desktop">
     <?php
     if( have_rows('projects') ):
       $i = 1;
@@ -47,5 +47,35 @@
     endif;
     ?>
   </div>
+
+
+
+
+  <div class="mobile projects-headlines">
+    <?php
+    if( have_rows('projects') ):
+      $i = 1;
+
+      while ( have_rows('projects') ) : the_row();
+      ?>
+      <div id="mp-<?php echo $i ?>" class="projects-box">
+
+        <div class="projects-headlines-inside">
+          <p><?php the_sub_field('projects_headline'); ?></p>
+        </div>
+
+
+
+      </div>
+      <?php
+      $i++;
+      endwhile;
+
+    else :
+
+    endif;
+    ?>
+  </div>
+
 
 </div>
