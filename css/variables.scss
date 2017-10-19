@@ -62,6 +62,9 @@ $box-width-small: 87vw;
 .list {
   line-height: 1.5;
   cursor: pointer;
+  @media screen and (max-width: $break-small) {
+    cursor: default;
+  }
 }
 
 .noselect {

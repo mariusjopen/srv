@@ -10,7 +10,7 @@
 		height: $box-width-middle;
 	}
 	@media screen and (max-width: $break-small) {
-		height: $box-width-small;
+		height: auto;
 	}
 }
 
@@ -31,9 +31,9 @@
 		width: 20vw;
 	}
 	@media screen and (max-width: $break-small) {
-		height: $box-width-small;
-		left: 75vw;
-		width: 20vw;
+		height: auto;
+		left: 0vw;
+		width: $box-width-small;
 	}
 }
 
@@ -56,7 +56,7 @@
 	}
 	@media screen and (max-width: $break-small) {
 		height: $box-width-small;
-		left: 30vw;
+		left: 0vw;
 	}
 }
 
@@ -76,9 +76,10 @@
 	  margin-left: 25vw;
 	}
 	@media screen and (max-width: $break-small) {
-		width: 15vw;
-	  height: 15vw;
-	  margin-left: 25vw;
+		width: $box-width-small;
+	  margin-left: 0vw;
+		height: $box-width-small;
+		left: 0vw;
 	}
 
 }

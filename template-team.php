@@ -1,6 +1,6 @@
 <div id="team" class="container">
 
-  <div class="team-headlines">
+  <div class="desktop team-headlines">
     <?php
     if( have_rows('team') ):
     $i = 1;
@@ -25,7 +25,7 @@
   </div>
 
 
-  <div class="team-effect">
+  <div class="desktop team-effect">
     <?php
     if( have_rows('team') ):
     $i = 1;
@@ -42,6 +42,48 @@
             echo wp_get_attachment_image( $image, $size );
           }
           ?>
+        </div>
+
+        <div class="team-text">
+          <?php the_sub_field('team_text'); ?>
+        </div>
+
+      </div>
+      <?php
+      $i++;
+      endwhile;
+
+    else :
+
+    endif;
+    ?>
+  </div>
+
+
+
+  <div class="mobile team-headlines">
+    <?php
+    if( have_rows('team') ):
+    $i = 1;
+
+      while ( have_rows('team') ) : the_row();
+      ?>
+      <div class="team-box">
+
+
+
+        <div class="team-image <?php the_sub_field('team_image_size'); ?>">
+          <?php
+          $image = get_sub_field('team_image');
+          $size = 'big';
+          if( $image ) {
+            echo wp_get_attachment_image( $image, $size );
+          }
+          ?>
+        </div>
+
+        <div class="team-headlines-inside">
+          <p><?php the_sub_field('team_headline'); ?></p>
         </div>
 
         <div class="team-text">

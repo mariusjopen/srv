@@ -15,7 +15,7 @@
     height: $box-width-middle;
   }
   @media screen and (max-width: $break-small) {
-    height: $box-width-small;
+    height: auto;
   }
 }
 
@@ -32,6 +32,6 @@
     height: $box-width-middle;
   }
   @media screen and (max-width: $break-small) {
-    height: $box-width-small;
+    height: auto;
   }
 }
