@@ -9,11 +9,31 @@
 		<?php wp_head(); ?>
 
 		<script>
-			jQuery(function() {
-				jQuery.scrollify({
-					section : ".container"
+			jQuery(function () {
+			  // initialize skrollr if the window width is large enough
+			  if (jQuery(window).width() > 600) {
+					jQuery.scrollify({
+						section : ".container"
+					});
+			  }
+
+				jQuery(window).on('resize', function () {
+					if (jQuery(window).width() > 600) {
+						jQuery.scrollify.enable();
+						jQuery.scrollify({
+							section : ".container"
+						});
+					}
 				});
+			  // disable skrollr if the window is resized below 768px wide
+			  jQuery(window).on('resize', function () {
+			    if (jQuery(window).width() <= 600) {
+						jQuery.scrollify.destroy();
+						jQuery.scrollify.disable();
+			    }
+			  });
 			});
+
     </script>
 
 	</head>

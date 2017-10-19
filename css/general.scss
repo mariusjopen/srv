@@ -29,7 +29,10 @@ body {
   font-family: 'BentonModDisp-Regular';
   -webkit-font-smoothing: antialiased;
   overflow:hidden;
-      background-color: rgb(250, 250, 250);
+  background-color: rgb(250, 250, 250);
+  @media screen and (max-width: $break-small) {
+    overflow: auto;
+  }
 }
 
 strong {
@@ -48,7 +51,7 @@ h1 {
     font-size: 20px;
   }
   @media screen and (max-width: $break-small) {
-    font-size: 10px;
+    font-size: 20px;
   }
 }
 
@@ -90,6 +93,9 @@ a:hover {
 
 .container {
 	height: 100vh;
+  @media screen and (max-width: $break-small) {
+    height: auto !important;
+  }
 }
 
 .welcome-text,
@@ -103,6 +109,9 @@ a:hover {
 .contact-text,
 .contact-image {
 	position: absolute;
+	@media screen and (max-width: $break-small) {
+		position: relative;
+	}
 }
 
 .projects-effect-box,

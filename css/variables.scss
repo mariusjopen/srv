@@ -3,11 +3,11 @@ $grey: #999;
 
 $break-big: 1600px;
 $break-middle: 800px;
-$break-small: 500px;
+$break-small: 600px;
 
 $box-width-big: 38vw;
 $box-width-middle: 40vw;
-$box-width-small: 40vw;
+$box-width-small: 87vw;
 
 .position_left {
   left: 15vw;
@@ -31,7 +31,7 @@ $box-width-small: 40vw;
     left: 50vw;
   }
   @media screen and (max-width: $break-small) {
-    left: 50vw;
+    left: 5vw;
   }
 }
 
@@ -39,6 +39,11 @@ $box-width-small: 40vw;
   position: absolute;
   margin-top: 50vh;
   transform: translateY(-52%);
+  @media screen and (max-width: $break-small) {
+    position: relative;
+    margin-top: auto;
+    transform: translateY(0%);
+  }
 }
 
 .horizontal_center {
@@ -50,7 +55,7 @@ $box-width-small: 40vw;
     width: $box-width-big;
   }
   @media screen and (max-width: $break-small) {
-    width: $box-width-big;
+    width: $box-width-small;
   }
 }
 
