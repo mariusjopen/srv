@@ -13,11 +13,17 @@
   }
   @media screen and (max-width: $break-small) {
     height: $box-width-small;
+    margin-top: 15vh;
+    margin-bottom: 2vh;
   }
 }
 
 .image-active {
   @extend .position_middle;
+  @media screen and (max-width: $break-small) {
+    margin-top: 5vh !important;
+    margin-bottom: 200px;
+  }
 }
 
 .welcome-text {
@@ -34,5 +40,11 @@
   @media screen and (max-width: $break-small) {
     width: $box-width-small;
     height: auto;
+    margin-top: 25vh;
   }
+}
+
+#welcome {
+  height: 100vh !important;
+  margin-bottom: 0px;
 }

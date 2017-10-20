@@ -52,6 +52,9 @@
 
 
   <div class="mobile projects-headlines">
+
+    <div class="title-inside"> <p><?php the_field('projects_navigation_title'); ?></p></div>
+    
     <?php
     if( have_rows('projects') ):
       $i = 1;

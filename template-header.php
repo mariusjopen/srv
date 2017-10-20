@@ -19,7 +19,7 @@
 			</div>
 		</div>
 
-		<div class="header-language">
+		<div class=" desktop header-language">
 			<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 		</div>
 	</div>

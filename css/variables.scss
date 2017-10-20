@@ -64,6 +64,7 @@ $box-width-small: 87vw;
   cursor: pointer;
   @media screen and (max-width: $break-small) {
     cursor: default;
+    line-height: 1.3;
   }
 }
 

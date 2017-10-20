@@ -11,7 +11,8 @@
     height: $box-width-middle;
   }
   @media screen and (max-width: $break-small) {
-    height: $box-width-small;
+    height: auto;
+    width: $box-width-small;
   }
 }
 
@@ -33,5 +34,11 @@
   }
   @media screen and (max-width: $break-small) {
     height: $box-width-small;
+  }
+}
+
+#contact {
+  @media screen and (max-width: $break-small) {
+    margin-bottom: 100px;
   }
 }

@@ -62,6 +62,9 @@
 
 
   <div class="mobile team-headlines">
+
+    <div class="title-inside"> <p><?php the_field('team_navigation_title'); ?></p></div>
+
     <?php
     if( have_rows('team') ):
     $i = 1;

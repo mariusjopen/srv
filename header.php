@@ -15,6 +15,9 @@
 					jQuery.scrollify({
 						section : ".container"
 					});
+
+
+					
 			  }
 
 				jQuery(window).on('resize', function () {

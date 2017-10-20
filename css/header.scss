@@ -1,10 +1,11 @@
-.header {    margin-top: 15px;
+.header {
+  margin-top: 15px;
   position: fixed;
   z-index: 100;
   @media screen and (max-width: $break-small) {
     position: relative;
         margin-top: 15px;
-        margin-bottom: 15px;
+        margin-bottom: 50px;
   }
 }
 
@@ -13,7 +14,7 @@
   @extend p ;
 }
 
-.header img {
+.header-language img {
   display: none;
 }
 
@@ -27,8 +28,8 @@
   @media screen and (max-width: $break-small) {
     position: relative;
     bottom: 0px;
-    left: 30px;
-    font-size: 30px;
+    left: 5vw;
+    font-size: 20px;
 
   }
 }
@@ -37,6 +38,9 @@
   position: fixed;
   bottom: 30px;
   @extend .position_middle;
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
 }
 
 .header-navigation-inside {
@@ -55,6 +59,13 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
+  @media screen and (max-width: $break-small) {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
 }
 
 .menu-item {
@@ -67,5 +78,13 @@
 }
 
 .en #menu-item-163 a {
+    color: $grey;
+}
+
+.it .menu-item-164 a {
+    color: $grey;
+}
+
+.en .menu-item-163 a {
     color: $grey;
 }
