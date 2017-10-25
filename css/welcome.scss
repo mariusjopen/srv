@@ -40,7 +40,11 @@
   @media screen and (max-width: $break-small) {
     width: $box-width-small;
     height: auto;
-    margin-top: 25vh;
+
+
+    position: absolute;
+    margin-top: 50vh;
+    transform: translateY(-82%);
   }
 }
 
