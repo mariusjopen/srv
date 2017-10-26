@@ -43,6 +43,12 @@ jQuery(function() {
     }, 'slow');
   });
 
+  jQuery("#header-navigation-news").click(function() {
+    jQuery('html,body').animate({
+        scrollTop: jQuery("#news").offset().top
+    }, 'slow');
+  });
+
   jQuery("#header-navigation-contact").click(function() {
     jQuery('html,body').animate({
         scrollTop: jQuery("#contact").offset().top

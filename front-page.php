@@ -5,6 +5,7 @@
 	<?php include(locate_template('template-welcome.php')); ?>
 	<?php include(locate_template('template-projects.php')); ?>
 	<?php include(locate_template('template-team.php')); ?>
+	<?php include(locate_template('template-news.php')); ?>
 	<?php include(locate_template('template-contact.php')); ?>
 </div>
 

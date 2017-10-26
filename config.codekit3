@@ -407,6 +407,12 @@
 		"oAP": "\/template-header.php",
 		"oF": 0
 		},
+	"\/template-news.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-news.php",
+		"oF": 0
+		},
 	"\/template-projects.php": {
 		"ft": 8192,
 		"oA": 2,

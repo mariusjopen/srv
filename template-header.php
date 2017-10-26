@@ -14,6 +14,10 @@
 				<p><?php the_field('team_navigation_title'); ?></p>
 			</div>
 
+			<div class="header-navigation-inside" id="header-navigation-news">
+				<p><?php the_field('news_navigation_title'); ?></p>
+			</div>
+
 			<div class="header-navigation-inside" id="header-navigation-contact">
 				<p><?php the_field('contact_navigation_title'); ?></p>
 			</div>
