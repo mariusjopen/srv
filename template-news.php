@@ -7,8 +7,9 @@
 
   <div class="news-text">
 
+    <?php single_post_title(); ?>
 
-
+    HERE A TEST
 
   </div>
 
