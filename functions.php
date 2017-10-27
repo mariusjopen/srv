@@ -21,5 +21,17 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
-
+function create_post_type() {
+  register_post_type( 'news',
+    array(
+      'labels' => array(
+        'name' => __( 'News' ),
+        'singular_name' => __( 'News' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );
+}
+add_action( 'init', 'create_post_type' );
 ?>
