@@ -7,7 +7,7 @@
 
   <div class="news-text">
 
-    <?php
+  <?php
 	$args = array( 'numberposts' => '1' );
 	$recent_posts = wp_get_recent_posts( $args );
 	foreach( $recent_posts as $recent ){
