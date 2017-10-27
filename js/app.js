@@ -56,4 +56,11 @@ jQuery(function() {
   });
 
 
+  jQuery(".news-post-list").click(function() {
+    var n = jQuery(this).html().trim();
+    jQuery(".news-post" ).removeClass( "visible-news" );
+    jQuery( ".date-" + n).addClass( "visible-news" );
+  });
+
+
 });

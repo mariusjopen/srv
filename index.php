@@ -14,6 +14,48 @@
 
 get_header(); ?>
 
-<p>INDEX</p>
+<div class="news-year">
+
+  <?php
+  query_posts(array(
+      'post_type' => 'news'
+  ) );
+  while (have_posts()) : the_post();
+  ?>
+
+    <div class="news-post-list">
+    <?php the_date( 'Y' ); ?>
+    </div>
+
+  <?php
+  endwhile;
+  wp_reset_query();
+  ?>
+
+</div>
+
+<div class="news-archive">
+
+  <?php
+  query_posts(array(
+      'post_type' => 'news'
+  ) );
+  while (have_posts()) : the_post();
+  ?>
+
+  <div class="visible-news date-<?php the_date( 'Y' ); ?> news-post">
+    <div class="title"><p><?php the_title(); ?></p></div>
+
+    <div class="date"><p><?php the_date( 'j F, Y' ); ?></p></div>
+      </br>
+    <div class="content"><p><?php the_field('news_teaser'); ?></p></div>
+  </div>
+
+  <?php
+  endwhile;
+  wp_reset_query();
+  ?>
+
+</div>
 
 <?php get_footer(); ?>
