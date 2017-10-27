@@ -7,9 +7,21 @@
 
   <div class="news-text">
 
-    <?php single_post_title(); ?>
+    <?php
+	$args = array( 'numberposts' => '1' );
+	$recent_posts = wp_get_recent_posts( $args );
+	foreach( $recent_posts as $recent ){
+  ?>
+		<div class="title"><?php echo $recent["post_title"];  ?></div>
 
-    HERE A TEST
+    <div class="date"><?php echo $recent["post_date"];  ?></div>
+
+    <div class="content"><?php echo $recent["post_content"];  ?></div>
+
+  <?php
+	}
+	wp_reset_query();
+?>
 
   </div>
 
