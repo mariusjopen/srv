@@ -18,7 +18,7 @@
 
       <div class="date"><p><?php the_date( 'j F, Y' ); ?></p></div>
         </br>
-      <div class="content"><?php the_content(); ?></div>
+      <div class="content"><p><?php the_field('news_teaser'); ?></p></div>
     <?php endwhile;?>
 
   </div>
