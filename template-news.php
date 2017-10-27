@@ -8,18 +8,24 @@
   <div class="news-text">
 
     <?php
-        query_posts(array(
-            'post_type' => 'news',
-            'showposts' => 1
-        ) );
+    query_posts(array(
+        'post_type' => 'news',
+        'showposts' => 1
+    ) );
+
+    while (have_posts()) : the_post();
     ?>
-    <?php while (have_posts()) : the_post(); ?>
+
       <div class="title"><p><?php the_title(); ?></p></div>
 
       <div class="date"><p><?php the_date( 'j F, Y' ); ?></p></div>
         </br>
       <div class="content"><p><?php the_field('news_teaser'); ?></p></div>
-    <?php endwhile;?>
+
+    <?php
+    endwhile;
+    wp_reset_query();
+    ?>
 
   </div>
 

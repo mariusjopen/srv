@@ -14,7 +14,6 @@
 
   </div>
 
-  
   <div class="contact-text">
     <?php the_field('contact_text'); ?>
   </div>
