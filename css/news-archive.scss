@@ -1,7 +1,32 @@
 .news-post{
 	display: none;
+      margin-bottom: 100px;
 }
 
 .visible-news {
 	display: block;
+}
+
+
+.news-year p {
+  @extend .list ;
+}
+
+.news-year {
+	  position: absolute;
+    top: 100px;
+
+	@extend .horizontal_center;
+  @extend .position_left ;
+
+}
+
+.news-archive {
+  position: absolute;
+      top: 100px;
+
+	@extend .horizontal_center;
+  @extend .position_middle ;
+
+
 }

@@ -1,8 +1,8 @@
 <div id="news" class="container">
 
   <div class="news-list">
-    <div class="news-list-inside"><p><?php the_field('news_navigation_title'); ?></p></div>
-    <div class="news-list-inside"><p><?php the_field('news_archive_title'); ?></p></div>
+    <div class="active news-list-inside"><p><?php the_field('news_navigation_title'); ?></p></div>
+    <div class="news-list-inside"><p><a href="/news.php"><?php the_field('news_archive_title'); ?></a></p></div>
   </div>
 
   <div class="news-text">

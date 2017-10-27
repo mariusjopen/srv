@@ -1,8 +1,10 @@
-.news-list p {
+.news-post-list {
   @extend .list ;
+  font-size: 20px;
 }
 
 .news-list {
+
 	height: $box-width;
 	@extend .vertical_center;
 	@extend .horizontal_center;
@@ -34,4 +36,17 @@
   @media screen and (max-width: $break-small) {
     height: auto;
   }
+}
+
+.news-list a:hover {
+  border: none !important;
+}
+
+.header-title a:hover {
+  border: none;
+}
+
+
+.error404 {
+  overflow: auto;
 }

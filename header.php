@@ -17,7 +17,7 @@
 					});
 
 
-					
+
 			  }
 
 				jQuery(window).on('resize', function () {
