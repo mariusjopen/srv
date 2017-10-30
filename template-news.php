@@ -2,7 +2,7 @@
 
   <div class="news-list desktop">
     <div class="active news-list-inside"><p><?php the_field('news_navigation_title'); ?></p></div>
-    <div class="news-list-inside"><p><a href="/news-archive.php"><?php the_field('news_archive_title'); ?></a></p></div>
+    <div class="news-list-inside"><p><a href="/news-archive"><?php the_field('news_archive_title'); ?></a></p></div>
   </div>
 
 
