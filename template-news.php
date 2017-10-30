@@ -1,12 +1,15 @@
 <div id="news" class="container">
 
-  <div class="news-list">
+  <div class="news-list desktop">
     <div class="active news-list-inside"><p><?php the_field('news_navigation_title'); ?></p></div>
     <div class="news-list-inside"><p><a href="/news.php"><?php the_field('news_archive_title'); ?></a></p></div>
   </div>
 
-  <div class="news-text">
 
+
+
+  <div class="news-text">
+  <div class="news-title mobile"> <p><?php the_field('news_navigation_title'); ?></p></div>
     <?php
     query_posts(array(
         'post_type' => 'news',
@@ -26,6 +29,10 @@
     endwhile;
     wp_reset_query();
     ?>
+
+
+<div class="news-archive-link mobile"><p><a href="/news.php"><?php the_field('news_archive_title'); ?></a></p></div>
+
 
   </div>
 

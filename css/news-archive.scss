@@ -18,7 +18,14 @@
 
 	@extend .horizontal_center;
   @extend .position_left ;
-
+	@media screen and (max-width: $break-big) {
+	}
+	@media screen and (max-width: $break-middle) {
+	}
+	@media screen and (max-width: $break-small) {
+    top: 20px;
+  position: relative;
+	}
 }
 
 .news-archive {
@@ -27,6 +34,26 @@
 
 	@extend .horizontal_center;
   @extend .position_middle ;
+	@media screen and (max-width: $break-big) {
+	}
+	@media screen and (max-width: $break-middle) {
+	}
+	@media screen and (max-width: $break-small) {
+
+  position: relative;
+
+	}
+
+}
 
 
+.page-template-page-news {
+  overflow: auto;
+}
+
+.page-template-page-news .header {
+	@media screen and (max-width: $break-small) {
+
+  display: none;
+	}
 }

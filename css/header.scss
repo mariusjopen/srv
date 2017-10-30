@@ -38,6 +38,9 @@
   position: fixed;
   bottom: 30px;
   @extend .position_middle;
+  @media screen and (max-width: $break-middle) {
+    right: 30px ;
+  }
   @media screen and (max-width: $break-small) {
     display: none;
   }
@@ -48,6 +51,9 @@
     margin-right: 10px;
     cursor: pointer;
     @extend .noselect ;
+    @media screen and (max-width: $break-middle) {
+      float: right;
+    }
 }
 
 .header-navigation-inside:hover {
@@ -59,7 +65,11 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
+  @media screen and (max-width: $break-middle) {
+    display: none;
+  }
   @media screen and (max-width: $break-small) {
+
     position: relative;
     bottom: 0px;
     right: 0px;
@@ -68,9 +78,26 @@
   }
 }
 
+
+.header-language.mobile {
+
+  @media screen and (max-width: $break-small) {
+
+  display: block;
+  }
+}
+.header-language.mobile li {
+
+  @media screen and (max-width: $break-small) {
+
+margin-left: 7px;
+  }
+}
+
 .menu-item {
   float: left;
   margin-left: 10px;
+  font-size: 20px;
 }
 
 .it #menu-item-164 a {

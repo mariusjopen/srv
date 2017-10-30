@@ -397,6 +397,12 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/page-news.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-news.php",
+		"oF": 0
+		},
 	"\/page.php": {
 		"ft": 8192,
 		"oA": 2,

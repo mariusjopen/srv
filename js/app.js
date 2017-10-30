@@ -26,31 +26,31 @@ jQuery(function() {
 
 
   jQuery("#header-navigation-welcome").click(function() {
-    jQuery('html,body').animate({
+    jQuery('html,body').stop().animate({
         scrollTop: jQuery("#welcome").offset().top
     }, 'slow');
   });
 
   jQuery("#header-navigation-projects").click(function() {
-    jQuery('html,body').animate({
+    jQuery('html,body').stop().animate({
         scrollTop: jQuery("#projects").offset().top
     }, 'slow');
   });
 
   jQuery("#header-navigation-team").click(function() {
-    jQuery('html,body').animate({
+    jQuery('html,body').stop().animate({
         scrollTop: jQuery("#team").offset().top
     }, 'slow');
   });
 
   jQuery("#header-navigation-news").click(function() {
-    jQuery('html,body').animate({
+    jQuery('html,body').stop().animate({
         scrollTop: jQuery("#news").offset().top
     }, 'slow');
   });
 
   jQuery("#header-navigation-contact").click(function() {
-    jQuery('html,body').animate({
+    jQuery('html,body').stop().animate({
         scrollTop: jQuery("#contact").offset().top
     }, 'slow');
   });
