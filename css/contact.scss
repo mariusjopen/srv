@@ -44,14 +44,14 @@
 }
 
 .image-slider {
-  opacity: 0;
+display: none;
   pointer-events: none;
     transition: 0.2s ease;
     cursor: pointer;
 }
 .image-active {
 
-    opacity: 1 !important;
+  display: block !important;
     z-index: 1000;
     pointer-events: all;
 }
