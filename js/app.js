@@ -4,9 +4,33 @@ jQuery(function() {
     jQuery( ".projects-headlines #p-1").addClass( "active" );
     jQuery( ".team-headlines #t-1").addClass( "active" );
 
-    jQuery( "#project-effect-" + 1 ).addClass( "visible" );
+    jQuery( "#iterate-" + 1 ).addClass( "image-active" );
+    jQuery( "#team-effect-" + 1 ).addClass( "visible" );
+
     jQuery( "#team-effect-" + 1 ).addClass( "visible" );
   });
+
+
+  jQuery(".image-slider").click(function() {
+    var max = jQuery(".image-slider").length;
+    var i = jQuery(this).attr('id').replace('iterate-', '');
+    var ii = parseInt(i);
+
+    ii = ii+1;
+
+    if(max >= ii) {
+      jQuery( ".image-slider").removeClass( "image-active" );
+      jQuery( "#iterate-" + ii ).addClass( "image-active" );
+    }
+
+    if(max < ii) {
+      jQuery( ".image-slider").removeClass( "image-active" );
+      jQuery( "#iterate-" + 1 ).addClass( "image-active" );
+    }
+  });
+
+
+
 
   jQuery(".projects-box").click(function() {
     var p = jQuery(this).attr('id').replace('p-', '');
@@ -69,5 +93,8 @@ jQuery(function() {
     jQuery(".news-post-list.all").click(function() {
       jQuery( ".news-post").addClass( "visible-news" );
     });
+
+
+
 
 });

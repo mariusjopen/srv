@@ -42,3 +42,16 @@
     margin-bottom: 100px;
   }
 }
+
+.image-slider {
+  opacity: 0;
+  pointer-events: none;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.image-active {
+
+    opacity: 1 !important;
+    z-index: 1000;
+    pointer-events: all;
+}

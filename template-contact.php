@@ -4,13 +4,38 @@
 
   <div class="contact-image">
 
-  <?php
-  $image = get_field('contact_image');
-  $size = 'big';
-  if( $image ) {
-    echo wp_get_attachment_image( $image, $size );
-  }
-  ?>
+
+
+        <?php
+
+      // check if the repeater field has rows of data
+      if( have_rows('contact_image_repeat') ):
+      $iterate = 1;
+       	// loop through the rows of data
+          while ( have_rows('contact_image_repeat') ) : the_row();
+
+              ?>
+              <div id="iterate-<?php echo $iterate ?>" class="image-slider">
+                <?php
+                $image = get_sub_field('contact_image');
+                $size = 'big';
+                if( $image ) {
+                  echo wp_get_attachment_image( $image, $size );
+                }
+                ?>
+              </div>
+              <?php
+              $iterate++;
+          endwhile;
+
+      else :
+
+          // no rows found
+
+      endif;
+
+      ?>
+
 
   </div>
 
