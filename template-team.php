@@ -85,10 +85,7 @@
           ?>
         </div>
 
-        <div class="team-headlines-inside">
-          <p><?php the_sub_field('team_headline'); ?></p>
-        </div>
-
+    
         <div class="team-text">
           <?php the_sub_field('team_text'); ?>
         </div>
