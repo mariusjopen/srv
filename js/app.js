@@ -5,7 +5,7 @@ jQuery(function() {
     jQuery( ".team-headlines #t-1").addClass( "active" );
 
     jQuery( "#iterate-" + 1 ).addClass( "image-active" );
-    jQuery( "#team-effect-" + 1 ).addClass( "visible" );
+    jQuery( "#project-effect-" + 1 ).addClass( "visible" );
 
     jQuery( "#team-effect-" + 1 ).addClass( "visible" );
   });
