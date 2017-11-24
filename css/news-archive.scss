@@ -13,8 +13,10 @@
 }
 
 .news-year {
-	  position: absolute;
+    position: fixed;
     top: 100px;
+    left: 30px;
+
 
 	@extend .horizontal_center;
   @extend .position_left ;

@@ -1,40 +1,53 @@
+.team-effect {
+	float: left;
+	clear: right;
+}
+
 .team-headlines {
-	height: $box-width;
-	@extend .vertical_center;
-	@extend .position_left;
+		float: left;
+    margin-right: -4vw;
+        width: calc(38.5vw - 30px);
 
 	@media screen and (max-width: $break-big) {
-		height: $box-width-big;
+		// height: $box-width-big;
 	}
 	@media screen and (max-width: $break-middle) {
-		height: $box-width-middle;
+		// height: $box-width-middle;
 	}
 	@media screen and (max-width: $break-small) {
-		height: auto;
+		// height: auto;
 	}
 }
 
-.team-text {
-  left: 65vw;
-	width: 20vw;
-  @extend .vertical_center ;
-  height: $box-width;
+.team-inside {
+	@extend .inside;
+	margin-left: 8vw;
+}
 
+.mobile.team-headlines {
+    margin-left: 30px;
+		@media screen and (max-width: $break-small) {
+			float: none !important;
+		}
+
+}
+
+.team-text {
+	float: left;
+	width: 20vw;
+    margin-left: 20px;
 	@media screen and (max-width: $break-big) {
-		height: $box-width-big;
-		left: 75vw;
 		width: 20vw;
 	}
 	@media screen and (max-width: $break-middle) {
-		height: $box-width-middle;
-		left: 75vw;
 		width: 20vw;
 	}
 	@media screen and (max-width: $break-small) {
 		height: auto;
 		left: 0vw;
-		width: $box-width-small;
-		margin-bottom: 40px;
+		width: calc(100vw - 70px);
+		margin-bottom: 70px;
+    margin-left: 0px;
 	}
 }
 
@@ -43,17 +56,13 @@
 }
 
 .team-image {
-  left: 32.5vw;
-  @extend .vertical_center ;
-  height: $box-width;
+  float: left;
 
 	@media screen and (max-width: $break-big) {
-		height: $box-width-big;
-		left: 32.5vw;
+
 	}
 	@media screen and (max-width: $break-middle) {
-		height: $box-width-middle;
-		left: 30vw;
+
 	}
 	@media screen and (max-width: $break-small) {
 		height: $box-width-small;
@@ -64,23 +73,23 @@
 .image-small img {
   width: 12.5vw;
   height: 12.5vw;
-  margin-left: 17.5vw;
+    margin-left: 10vw;
 
 	@media screen and (max-width: $break-big) {
 		width: 20vw;
 	  height: 20vw;
-	  margin-left: 18vw;
+	  margin-left: 10vw;
 	}
 	@media screen and (max-width: $break-middle) {
 		width: 15vw;
 	  height: 15vw;
-	  margin-left: 25vw;
+	  margin-left: 10vw;
 	}
 	@media screen and (max-width: $break-small) {
-		width: $box-width-small;
-	  margin-left: 0vw;
-		height: $box-width-small;
-		left: 0vw;
+		width: calc(100vw - 70px);
+margin-left: 0vw;
+height: calc(100vw - 70px);
+left: 0vw;
 	}
 
 }

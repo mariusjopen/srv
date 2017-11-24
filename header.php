@@ -11,7 +11,7 @@
 		<script>
 			jQuery(function () {
 			  // initialize skrollr if the window width is large enough
-			  if (jQuery(window).width() > 600) {
+			  if (jQuery(window).width() > 700) {
 					jQuery.scrollify({
 						section : ".container"
 					});
@@ -21,7 +21,7 @@
 			  }
 
 				jQuery(window).on('resize', function () {
-					if (jQuery(window).width() > 600) {
+					if (jQuery(window).width() > 700) {
 						jQuery.scrollify.enable();
 						jQuery.scrollify({
 							section : ".container"
@@ -30,7 +30,7 @@
 				});
 			  // disable skrollr if the window is resized below 768px wide
 			  jQuery(window).on('resize', function () {
-			    if (jQuery(window).width() <= 600) {
+			    if (jQuery(window).width() <= 700) {
 						jQuery.scrollify.destroy();
 						jQuery.scrollify.disable();
 			    }

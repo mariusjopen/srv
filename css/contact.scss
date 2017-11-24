@@ -1,26 +1,37 @@
 .contact-text {
-  height: $box-width;
-  width: $box-width;
+	float: left;
   @extend .vertical_center;
 	@extend .position_left;
 
   @media screen and (max-width: $break-big) {
-    height: $box-width-big;
+
   }
   @media screen and (max-width: $break-middle) {
-    height: $box-width-middle;
+
   }
   @media screen and (max-width: $break-small) {
-    height: auto;
+
     width: $box-width-small;
   }
 }
 
 .contact-image {
 	@extend .position_middle;
+		float: left;
 }
 
+.contact-inside {
+	@extend .inside;
+	@media screen and (max-width: $break-small) {
+		display: block;
+		position: relative;
+		    top: 60px;
+	}
+}
+
+
 .contact-image img {
+
   object-fit: cover;
   height: $box-width;
   @extend .horizontal_center;
@@ -33,7 +44,8 @@
     height: $box-width-middle;
   }
   @media screen and (max-width: $break-small) {
-    height: $box-width-small;
+    height: calc(100vw - 70px);
+		width: calc(100vw - 70px);
   }
 }
 
@@ -54,4 +66,10 @@ display: none;
   display: block !important;
     z-index: 1000;
     pointer-events: all;
+
+
+		@media screen and (max-width: $break-small) {
+		margin-bottom: 20px;
+		}
+
 }

@@ -27,6 +27,12 @@
 }
 
 .welcome-text {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: auto;
+	left: 30px;
+
   @extend .position_left;
   width: $box-width;
   @extend .vertical_center;
@@ -40,15 +46,15 @@
   @media screen and (max-width: $break-small) {
     width: $box-width-small;
     height: auto;
-
-
-    position: absolute;
-    margin-top: 50vh;
-    transform: translateY(-82%);
+		
+	position: relative;
+		left: auto;
   }
 }
 
 #welcome {
-  height: 100vh !important;
-  margin-bottom: 0px;
+	@media screen and (max-width: $break-small) {
+	height: 100vh !important;
+	}
+height: 100vh !important;
 }

@@ -1,5 +1,5 @@
 <div id="team" class="container">
-
+<div class="team-inside">
   <div class="desktop team-headlines">
     <?php
     if( have_rows('team') ):
@@ -58,7 +58,7 @@
     endif;
     ?>
   </div>
-
+</div>
 
 
   <div class="mobile team-headlines">
@@ -85,7 +85,7 @@
           ?>
         </div>
 
-    
+
         <div class="team-text">
           <?php the_sub_field('team_text'); ?>
         </div>

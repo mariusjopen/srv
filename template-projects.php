@@ -1,5 +1,5 @@
 <div id="projects" class="container">
-
+<div class="projects-inside">
   <div class="projects-headlines desktop">
     <?php
     if( have_rows('projects') ):
@@ -47,14 +47,14 @@
     endif;
     ?>
   </div>
-
+</div>
 
 
 
   <div class="mobile projects-headlines">
 
     <div class="title-inside"> <p><?php the_field('projects_navigation_title'); ?></p></div>
-    
+
     <?php
     if( have_rows('projects') ):
       $i = 1;

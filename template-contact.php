@@ -1,6 +1,14 @@
 <div id="contact" class="container">
+	<div  class="contact-inside">
+
 
   <div class="title-inside"> <p><?php the_field('contact_navigation_title'); ?></p></div>
+
+	<div class="contact-text">
+		<?php the_field('contact_text'); ?>
+	</div>
+
+
 
   <div class="contact-image">
 
@@ -39,14 +47,11 @@
 
   </div>
 
-  <div class="contact-text">
-    <?php the_field('contact_text'); ?>
-  </div>
-
 
 
   <div class=" mobile header-language">
     <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
   </div>
+</div>
 
 </div>

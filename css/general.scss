@@ -96,6 +96,7 @@ a:hover {
 
 .container {
 	height: 100vh;
+	position: relative;
   @media screen and (max-width: $break-small) {
     height: auto !important;
     margin-bottom: 100px;
@@ -113,20 +114,44 @@ a:hover {
 .team-headlines,
 .contact-text,
 .contact-image {
-	position: absolute;
 	@media screen and (max-width: $break-small) {
 		position: relative;
     margin-bottom: 20px;
 	}
 }
+.inside {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: auto;
+	left: 30px;
 
-.projects-effect-box,
-.team-effect-box {
+	@media screen and (max-width: $break-big) {
+
+	}
+	@media screen and (max-width: $break-middle) {
+
+	}
+	@media screen and (max-width: $break-small) {
+		    display: none;
+		position: relative;
+		top: auto;
+		transform: auto;
+		height: auto;
+		left: auto;
+	}
+}
+
+.invisible {
 	visibility: hidden;
+	height: 0px;
+	overflow: hidden;
 }
 
 .visible {
-	visibility: visible;
+	visibility: visible !important;
+	height: auto !important;
+	overflow: auto !important;
 }
 
 .active {

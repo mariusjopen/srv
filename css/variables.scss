@@ -3,47 +3,45 @@ $grey: #999;
 
 $break-big: 1600px;
 $break-middle: 800px;
-$break-small: 600px;
+$break-small: 700px;
 
 $box-width-big: 38vw;
 $box-width-middle: 40vw;
-$box-width-small: 87vw;
+$box-width-small: calc(100vw - 50px);
 
 .position_left {
-  left: 15vw;
+          width: calc(44.5vw - 30px);
+					margin-left: 8vw;
   @media screen and (max-width: $break-big) {
-    left: 7.5vw;
+
   }
   @media screen and (max-width: $break-middle) {
-    left: 5vw;
+
   }
   @media screen and (max-width: $break-small) {
-    left: 5vw;
+margin-left: 30px;
+    width: calc(100% - 30px);
   }
 }
 
+
 .position_middle {
-  left: 50vw;
+left: 52.5vw;
   @media screen and (max-width: $break-big) {
-    left: 52.5vw;
+left: 52.5vw;
   }
   @media screen and (max-width: $break-middle) {
-    left: 50vw;
+    left: 52.5vw;
   }
   @media screen and (max-width: $break-small) {
-    left: 5vw;
+    left: 30px;
   }
 }
 
 .vertical_center {
-  position: absolute;
-  margin-top: 50vh;
-  transform: translateY(-52%);
-  @media screen and (max-width: $break-small) {
-    position: relative;
-    margin-top: auto;
-    transform: translateY(0%);
-  }
+  opacity: 1;
+
+
 }
 
 .horizontal_center {

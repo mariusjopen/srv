@@ -1,5 +1,39 @@
 jQuery(function() {
 
+jQuery( document ).ready(function() {
+	myFunction();
+
+	  });
+
+
+		jQuery(window).on('resize', function(){
+			myFunction();
+
+			  });
+
+	function myFunction() {
+	  var elementHeights = jQuery('.projects-effect-box').map(function() {
+	    return jQuery(this).height();
+	  }).get();
+
+	  var maxHeight = Math.max.apply(null, elementHeights);
+
+		jQuery( ".projects-inside" ).height(maxHeight);
+	  jQuery( ".projects-effect-box" ).addClass( "invisible" );
+
+
+
+		var elementHeights = jQuery('.team-image, .team-text').map(function() {
+	    return jQuery(this).height();
+	  }).get();
+
+		var maxHeight = Math.max.apply(null, elementHeights);
+
+		jQuery( ".team-inside" ).height(maxHeight);
+	  jQuery( ".team-effect-box" ).addClass( "invisible" );
+	}
+
+
   jQuery( document ).ready(function() {
     jQuery( ".projects-headlines #p-1").addClass( "active" );
     jQuery( ".team-headlines #t-1").addClass( "active" );
@@ -28,7 +62,6 @@ jQuery(function() {
       jQuery( "#iterate-" + 1 ).addClass( "image-active" );
     }
   });
-
 
 
 
